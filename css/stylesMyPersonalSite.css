@@ -1,0 +1,312 @@
+body {
+  color: #141E27;
+  margin: 0;
+  text-align: center;
+  font-family: verdana, sans-serif, serif, monospace;
+  /* Under the font family we have chosen multiple fonts because in case user do
+  not have one font installed then they can use the next available font selection.
+  That is why we have put four types of fonts as a fail-safe option.*/
+}
+
+h1 {
+  color: #4E944F;
+  margin: 50px auto 0 auto;
+  /* This is known as circle short-hand procedure where instead of defining
+  margins to the top, right, bottom and left individually, we can write them
+  in a single line where the values will be provided in a clock wise manner.
+  I this this case the it will start from top and then right and then bottom and
+  then left just like a clock.*/
+  font-size: 4rem;
+  /* defining font size which is 90px. By default the font
+  size 16 pixel and to describe it as percentages or em or rem we simply divide
+  90/16 = 5.62 . rem menas root em which is less error prone and best to use it.
+  Also important note 1 em = 16 px. */
+  font-family: Georgia, serif;
+  /*
+  line-height: 2;
+  */
+}
+
+h2 {
+  color: #614124;
+  font-size: 2rem;
+  /* 2.5 rem is equivalent of 40 px */
+  font-family: Garamond, serif;
+  /*
+  font-weight: normal;
+ */
+ padding-bottom: 10px;
+}
+
+h3 {
+  color: #CC704B;
+  font-size: 2rem;
+  /* 2.5 rem is equivalent of 40 px */
+  font-family: Verdana, serif;
+}
+
+.profile{
+  width: 50%;
+  margin: 50px auto 50px auto;
+  /*
+  here the margin has four values. instead of just writing a fixed value or
+  selecting default "auto" option, we are specifying specific values to the
+  margin properties. It works like clockwise manner. so 100px for the top
+  section margin, then auto for the right section, then 100px for the bottom
+  section margin and finally auto for the left section.
+  */
+  text-align: left;
+  line-height: 1.5;
+
+}
+
+.skill-row{
+  width: 50%;
+  margin: 100px auto 100px auto;
+  /*
+  here the margin has four values. instead of just writing a fixed value or
+  selecting default "auto" option, we are specifying specific values to the
+  margin properties. It works like clockwise manner. so 100px for the top
+  section margin, then auto for the right section, then 100px for the bottom
+  section margin and finally auto for the left section.
+  */
+  text-align: left;
+
+}
+
+.ProfileImage{
+  border-radius: 50%;
+  width: 30%;
+  float: right;
+  /*
+  float properties help to wrap the text around the images. Website look more
+  professional. In this case the image will be displayed right side of the text.
+  */
+  /*
+  margin: 1px auto 1px 200px;
+ */
+}
+
+
+.WebsiteDevelopmentImage{
+  border-radius: 50%;
+  width: 25%;
+  float: left;
+  /*
+  float properties help to wrap the text around the images. Website look more
+  professional. In this case the image will be displayed left side of the text.
+  */
+  margin-right: 30px;
+}
+
+.ProgrammingImage{
+  border-radius: 50%;
+  width: 25%;
+  float: right;
+  /*
+  float properties help to wrap the text around the images. Website look more
+  professional. In this case the image will be displayed right side of the text.
+  */
+}
+/*
+
+.FirstPragraphToTest{
+
+  clear: left;
+
+  here clear property will act as an anti-float property to counter the float
+  property used in .ProgrammingImage or .WebsiteDevelopmentImage section.
+  if we use this clear property then the text will be displayed below the image
+  on the left hand-side. We are not using this property.
+}
+
+*/
+
+.topDivContainer {
+  background-color: #F7ECDE;
+  position: relative;
+  padding-top: 60px;
+}
+
+.middleDivContainer{
+  margin: 100px 0;
+  /*
+  here margin : 100px 0; means top and bottom part will be having 100px margins
+  whilst the right and left part will have 0 px margins repectively.
+  */
+
+}
+
+.bottomDivContainer{
+
+  background-color: #E0DDAA;
+
+  padding: 5px 0 5px;
+
+  /*
+  here padding : 5px 0 5px; means top part will be having 5px padding
+  whilst the right and left part will have 0 px padding repectively and the
+  bottom part will have 5px padding.
+  */
+
+}
+
+.topCloud {
+  position: absolute;
+  right: 300px;
+  top: 30px;
+}
+
+.bottomCloud {
+  position: absolute;
+  left: 300px;
+  bottom: 300px;
+}
+
+p {
+
+  line-height: 2;
+}
+
+.BioParagraph{
+  width: 99%;
+  margin: auto;
+}
+
+.ContactMessageParagraph{
+ width: 40%;
+ margin: 40px auto 60px;
+ /*
+ here margin : 40px auto 60px; means top part will be having 40px margins
+ whilst the right and left part will have auto margins repectively and
+ bottom part will have 60px.
+ */
+
+}
+
+a {
+
+  background-color: #e4f9f5;
+  font-family: Georgia, sans-serif;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+
+a:hover{
+
+  background-color: #Eaf6f6;
+
+}
+
+
+
+hr {
+  border: dotted #95CD41 6px;
+  border-bottom: none;
+  width: 50%;
+  margin: 70px auto;
+  /*
+  here margin : 70px auto; means top and bottom part will be having 70px margins
+  whilst the right and left part will have auto margins repectively.
+  */
+
+  /*
+  border-color: #95CD41;
+  border-style: none;
+  border-top-style: dotted;
+  border-width: 5px;
+  width: 50%;
+  */
+}
+
+
+.ContactMebutton {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  -webkit-border-radius: 16;
+  -moz-border-radius: 16;
+  border-radius: 16px;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.ContactMebutton:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}
+
+.copyrightParagraph {
+  background-color: #eaf6f6;
+  font-size: .75rem;
+  padding: 20px 0;
+
+}
+
+.AcademicQualificationTable{
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 1.05em;
+
+  /* font-weight: bold; */
+  width: 100%;
+  border-radius: 8px 8px 8px 8px;
+  overflow: hidden;
+  box-shadow: 0 0 20px #B20600;
+}
+
+.AcademicQualificationTable thead tr {
+
+  background-color: #009879;
+  color: #FAF5E4;
+  text-align: left;
+  font-weight: bold;
+
+
+}
+
+/*
+.AcademicQualificationTable th{
+  margin: 12px 15px;
+
+}
+
+
+.AcademicQualificationTable th td{
+
+  margin: 2px 5px;
+
+}
+*/
+
+
+.AcademicQualificationTable tbody tr {
+
+  border-bottom: 1px solid #dddddd;
+}
+
+.AcademicQualificationTable tbody tr:nth-of-type(even) {
+
+  background-color: #B9F8D3;
+}
+
+.AcademicQualificationTable tbody tr:nth-of-type(odd) {
+
+  background-color: #FFFBE7;
+}
+
+.AcademicQualificationTable tbody tr:last-of-type{
+  border-bottom: 2px solid #009879;
+
+}
